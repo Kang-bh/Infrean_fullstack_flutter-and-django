@@ -1,1 +1,1 @@
-web: gunicorn infrean-test-quiz.wsgi
+web: gunicorn myapi.wsgi
