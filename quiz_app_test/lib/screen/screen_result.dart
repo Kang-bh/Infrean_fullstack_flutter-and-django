@@ -15,7 +15,9 @@ class ResultScreen extends StatelessWidget {
 
     int score = 0;
     for (int i = 0; i < quizs.length; i++) {
-      score += 1;
+      if (quizs[i].answer == answers[i]) {
+        score += 1;
+      }
     }
 
     return WillPopScope(
